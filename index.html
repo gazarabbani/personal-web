@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pertemuan 3 - form registrasi</title>
+</head>
+<body>
+    <h1>Form Registrasi Sederhana</h1>
+    <p>Silakan isi form di bawah ini untuk mendaftar:</p>
+    <form id ="formatRegistrasi" action = "proses_registrasi.php" method = "POST" onsubmit="return validasiForm()">
+        
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <button type="submit">Daftar</button>
+    </form>
+
+    <hr>
+    <a href="tampil_data.php">Lihat Data Registrasi</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
